@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class TextFileReader {
-	public void readFile(String path){
+	public void readFile(String path, TextFileHandler textLineHandler){
 		try{
 			File file = new File(path);
 			BufferedReader br = new BufferedReader(new FileReader(file));
