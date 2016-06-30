@@ -13,7 +13,7 @@ public class TextFileReader {
 			
 			String strLine;
 			while((strLine = br.readLine()) != null){
-				System.out.println(strLine);
+				textLineHandler.handleTextLine(strLine);
 			}
 		} catch(IOException e){
 			System.out.println("Error:" + e.getMessage());
